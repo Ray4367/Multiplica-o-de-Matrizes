@@ -191,11 +191,6 @@ int main() {
     printf("Validacao: %s\n\n",
            correto ? "OK" : "FALHOU");
 
-    printf("Tempo sequencial : %.3f s\n", tempo_seq);
-    printf("Tempo paralelo   : %.3f s\n", tempo_par);
-    printf("Speedup          : %.2f x\n",
-           tempo_seq / tempo_par);
-
     free(A);
     free(B);
     free(C_seq);
